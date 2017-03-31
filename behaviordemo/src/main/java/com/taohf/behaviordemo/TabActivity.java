@@ -18,6 +18,8 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
+import java.util.List;
+
 public class TabActivity extends AppCompatActivity {
 
     /**
@@ -57,6 +59,8 @@ public class TabActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+
+                List<Fragment> fragments = getSupportFragmentManager().getFragments();
             }
         });
 
